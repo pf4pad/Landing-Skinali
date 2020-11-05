@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  src: url("../fonts/RobotoCondensed-Regular.eot");
+  src: url("../fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url("../fonts/RobotoCondensed-Bold.eot");
+  src: url("../fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.navbar-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.navbar-wrap__mobile, .navbar-wrap__landline {
+  text-align: right;
+}
+
+.navbar__phone {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 19px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar__small-text {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  transform: translateY(0%);
+}
+
+.menu_active {
+  transform: translateY(0);
+}
+
+.menu__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(81, 11, 186, 0.1);
+  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  height: 80px;
+  width: 70px;
+}
+
+.menu-button-line {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #89a9eb;
+  margin: 2px 0;
+}
+
+.logo__text {
+  display: block;
+  font-style: 5px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+.logo__description {
+  display: block;
+  font-style: 14px;
+  color: #333333;
+}
+
+.hero {
+  background: #f1f1f1 url("../img/hero/hero-bgr.jpg") no-repeat center right;
+  background-size: 1200px auto;
+  padding-top: 120px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hero__subtitle {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
