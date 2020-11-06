@@ -1,8 +1,9 @@
 .hero
-
-  background-size: 1200px auto
+  background: #dcb59b url('../img/hero/hero-bgr.jpg') no-repeat
+  background-position: top right
+  background-size: 900px auto
   padding-top: 120px
-  padding-bottom: 270px
+  padding-bottom: 70px
   margin-top: 80px
   &__title
     font-size: 30px
@@ -10,14 +11,20 @@
   &__subtitle
     display: block
     font-size: 30px
-    margin-bottom: 65px
+    margin-bottom: 15px
+@media (max-width: 1170px)
+  .hero
+
+    background: #dcb59b url('../img/hero/hero-bgr.jpg') no-repeat
+    background-size: 70% auto
+    background-position: top right
+
 @media (max-width: 991px)
   .hero
-    max-width: 750px
+
     background: #dcb59b url('../img/hero/hero-bgr.jpg') no-repeat
-    background-size: 100%
+    background-size: 50% auto
     background-position: top right
     &__title
-      font-size: 30px
+      margin-top: -50px
       margin-bottom: 40px
-      background:
