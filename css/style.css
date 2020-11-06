@@ -62,6 +62,10 @@ body {
   font-family: 'Open Sans Bold', sans-serif;
 }
 
+.bg-second {
+  background: #f1f1f1;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -208,7 +212,7 @@ body {
 }
 
 .hero {
-  background: #dcb59b url("../img/hero/hero-bgr.jpg") no-repeat;
+  background: #f1f1f1 url("../img/hero/hero-bgr.jpg") no-repeat;
   background-position: top right;
   background-size: 900px auto;
   padding-top: 120px;
@@ -229,7 +233,7 @@ body {
 
 @media (max-width: 1170px) {
   .hero {
-    background: #dcb59b url("../img/hero/hero-bgr.jpg") no-repeat;
+    background: #f1f1f1 url("../img/hero/hero-bgr.jpg") no-repeat;
     background-size: 70% auto;
     background-position: top right;
   }
@@ -237,7 +241,7 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    background: #dcb59b url("../img/hero/hero-bgr.jpg") no-repeat;
+    background: #f1f1f1 url("../img/hero/hero-bgr.jpg") no-repeat;
     background-size: 50% auto;
     background-position: top right;
   }
@@ -245,4 +249,9 @@ body {
     margin-top: -50px;
     margin-bottom: 40px;
   }
+}
+
+.offer-block {
+  background: #ffffff;
+  padding: 80px;
 }
