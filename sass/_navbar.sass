@@ -35,6 +35,7 @@
   padding: 16px 0
   background-color: $primary
   transform: translateY(0%)
+  opacity: 0    // Включать видимость JS
   &_active
     transform: translateY(0)
   &__nav
@@ -73,3 +74,17 @@
     display: block
     font-style: 14px
     color: $text-light
+@media (max-width: 991px)
+  .navbar
+    &__mobile, &__landline
+      display: none
+@media (max-width: 576px)
+  .logo
+    display: none
+  .menu
+    opacity: 0 // Включать видимость JS
+    margin-bottom: 20px
+    &__nav
+      flex-direction: column
+    &__link
+      margin-bottom: 20px
