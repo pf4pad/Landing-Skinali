@@ -229,6 +229,7 @@ body {
   .hero {
     max-width: 750px;
     background: #dcb59b url("../img/hero/hero-bgr.jpg") no-repeat;
+    margin-top: 40px;
     background-size: 100%;
     background-position: top right;
   }
