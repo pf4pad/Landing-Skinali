@@ -92,6 +92,7 @@ body {
 
 .checkbox-label:before {
   content: '';
+  display: inline-block;
   width: 30px;
   height: 30px;
   border: 1px solid #dddddd;
@@ -307,7 +308,7 @@ body {
 .form__row {
   display: flex;
   align-items: center;
-  min-width: 900px;
+  max-width: 900px;
   margin-bottom: 25px;
 }
 
@@ -360,5 +361,9 @@ body {
   .form__group {
     flex-basis: 100%;
     width: 100%;
+  }
+  .form__input {
+    width: 100%;
+    border-right-width: 1px;
   }
 }
