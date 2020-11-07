@@ -66,6 +66,12 @@ body {
   background: #f1f1f1;
 }
 
+.input {
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -216,7 +222,8 @@ body {
   background-position: top right;
   background-size: 900px auto;
   padding-top: 120px;
-  padding-bottom: 220px;
+  padding-bottom: 170px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -270,11 +277,25 @@ body {
 
 .form__row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  min-width: 900px;
 }
 
 .form__label {
   display: block;
   font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.form__group {
+  flex-basis: 33.33%;
+}
+
+.form__input {
+  width: 100%;
+  border-right-width: none;
+}
+
+.form__input:last-child {
+  border-right-width: 1px;
 }
