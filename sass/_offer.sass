@@ -15,8 +15,16 @@
 .form
   &__row
     display: flex
-    justify-content: space-between
     align-items: center
+    min-width: 900px
   &__label
     display: block
     font-size: 17px
+    margin-bottom: 15px
+  &__group
+    flex-basis: 33.33%
+  &__input
+    width: 100%
+    border-right-width: none
+    &:last-child
+      border-right-width: 1px
