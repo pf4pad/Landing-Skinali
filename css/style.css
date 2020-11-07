@@ -216,8 +216,7 @@ body {
   background-position: top right;
   background-size: 900px auto;
   padding-top: 120px;
-  padding-bottom: 70px;
-  margin-top: 80px;
+  padding-bottom: 220px;
 }
 
 .hero__title {
@@ -254,4 +253,28 @@ body {
 .offer-block {
   background: #ffffff;
   padding: 80px;
+}
+
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__label {
+  display: block;
+  font-size: 17px;
 }
