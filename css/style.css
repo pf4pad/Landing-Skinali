@@ -361,9 +361,21 @@ body {
   .form__group {
     flex-basis: 100%;
     width: 100%;
+    margin-bottom: 15px;
   }
   .form__input {
     width: 100%;
     border-right-width: 1px;
   }
+}
+
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-block__item {
+  flex-basis: 33%;
+  text-align: center;
 }
