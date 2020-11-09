@@ -77,6 +77,15 @@ body {
   font-family: 'Open Sans Bold', sans-serif;
 }
 
+.button-fitting {
+  background-color: #ffffff;
+  color: #507fe1;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+}
+
 .bg-second {
   background: #f1f1f1;
 }
@@ -418,4 +427,38 @@ body {
     flex-basis: 100%;
     margin-bottom: 50px;
   }
+}
+
+.catalog-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 470px;
+  position: relative;
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog-card__button {
+  font-size: 11px;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
