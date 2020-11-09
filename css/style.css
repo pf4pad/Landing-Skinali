@@ -86,6 +86,12 @@ body {
   background-color: #7c9fe8;
 }
 
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  background-origin: none;
+}
+
 .bg-second {
   background: #f1f1f1;
 }
@@ -440,11 +446,13 @@ body {
 }
 
 .catalog-card {
-  max-width: 470px;
+  max-width: 570px;
   position: relative;
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-card__buttons {
+  display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -452,13 +460,23 @@ body {
 
 .catalog-card__button {
   font-size: 11px;
-  padding: 10px;
-  text-transform: uppercase;
   border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 30px;
 }
 
 .catalog-card__tag {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
 }
