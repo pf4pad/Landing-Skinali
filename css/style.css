@@ -65,6 +65,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   background-color: #ffffff;
+  text-decoration: none;
   font-family: 'Open Sans Bold', sans-serif;
 }
 
@@ -74,6 +75,7 @@ body {
   padding: 25px 45px;
   background-color: #507fe1;
   color: #ffffff;
+  text-decoration: none;
   font-family: 'Open Sans Bold', sans-serif;
 }
 
@@ -89,7 +91,6 @@ body {
 .button-like {
   background-color: #507fe1;
   height: 30px;
-  background-origin: none;
 }
 
 .bg-second {
@@ -479,4 +480,28 @@ body {
 
 .catalog-card__image {
   display: block;
+  max-width: 570px;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__disription {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    justify-content: center;
+  }
+  .catalog__card {
+    max-width: 470px;
+  }
 }
