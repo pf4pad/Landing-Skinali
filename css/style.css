@@ -480,7 +480,7 @@ body {
 
 .catalog-card__image {
   display: block;
-  max-width: 570px;
+  border-image-outset: 10px 15px;
 }
 
 .catalog__link {
