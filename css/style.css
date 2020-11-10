@@ -561,3 +561,22 @@ body {
     margin-left: 30px;
   }
 }
+
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.price-card__text {
+  padding: 20px;
+}
+
+.price-card__title {
+  margin: 0;
+  font-size: 15px;
+}
