@@ -778,3 +778,20 @@ body {
   border: 15px solid transparent;
   border-top: 15px solid  #fff;
 }
+
+.factory-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
+
+.factory-block__text {
+  flex-basis: 50%;
+  margin-left: 70px;
+  font-size: 20px;
+  text-indent: 1.5em;
+}
