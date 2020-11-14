@@ -795,3 +795,52 @@ body {
   font-size: 20px;
   text-indent: 1.5em;
 }
+
+@media (max-width: 768px) {
+  .factory-block__text {
+    min-width: 100%;
+    margin: auto;
+    font-size: 16px;
+    text-indent: 1.5em;
+  }
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts-block__item {
+  text-align: center;
+}
+
+.contacts__image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.contacts__text {
+  font-style: 16px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.contacts__adress {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__adress {
+    max-width: 200px;
+    margin: auto;
+  }
+}
