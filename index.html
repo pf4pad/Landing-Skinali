@@ -9,6 +9,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
   <title>Фабрика скинали</title>
 </head>
 
@@ -465,6 +466,31 @@
       <!-- /.container -->
     </section>
     <!-- /.section steps -->
+
+    <section class="section before">
+      <div class="container">
+        <h2 class="section-title section__title">
+          До и после
+        </h2>
+        <div class="before-slider">
+          <div class="before-slider__item">
+            <div class="before-after">
+              <img src="img/before-after/sample-before.png" alt="" class="">
+              <img src="img/before-after/sample-after.png" alt="" class="">
+            </div>
+          </div>
+          <div class="before-slider__item">
+
+          </div>
+          <div class="before-slider__item">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /.section before -->
+
     <section class="section reviews">
       <div class="container">
         <h2 class="section-title section__title">Отзывы наших клиентов</h2>
@@ -508,9 +534,10 @@
     <section class="offer">
       <div class="container">
         <div class="offer__block offer-block offer-block_price-bg">
-          <h2 class="offer__title">Ищите где дешевле и лучше</h2>
+          <h2 class="offer__title">Ищите где дешевле и лучше?</h2>
           <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите
-            это в заявке и мы пересчитаем заказ с максимальной скидкой</span>
+            это в заявке и мы пересчитаем заказ с максимальной скидкой
+          </span>
           <form action="#" class="form offer__form">
             <div class="form__row">
               <div class="form__group">
@@ -526,18 +553,22 @@
                 <input type="text" class="input form__input" placeholder="Ваша цена">
               </div>
             </div>
+
+
             <div class="form__row">
               <div class="form__group">
-                <input type="submit" class="button form__button form__button-price" value="Получить расчет со скидкой">
+                <button class="button form__button form__button-price">Получить расчет со скидкой</button>
               </div>
               <div class="form__group">
                 <span class="form__policy">Ваши данные надежно защищены. Отправление заявки ни к чему не
                   обязывает</span>
               </div>
             </div>
-
           </form>
         </div>
+
+
+      </div>
       </div>
     </section>
     <!-- /.section offer_price -->
@@ -626,14 +657,79 @@
       <!-- /.container -->
     </section>
     <!-- /.section contacts -->
-
+    <section class="section questions">
+      <div class="container">
+        <div class="questions-block">
+          <h3 class="questions__title">Остались вопросы?</h3>
+          <!-- /.questions__title -->
+          <a href="" class="questions__link">
+            Задайте их менеджеру
+          </a>
+          <!-- /.questions__link -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section question -->
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer__description">
+          <h4 class="footer__title">Фабрика скинали</h4>
+          <span class="footer__subtitle">ведущий производитель сканали</span>
+          <span class="footer__copy">©Фабрика скинали №1</span>
+        </div>
+        <!-- /.foote__description -->
+        <div class="footer__pay-info">
+          <img src="img/footer/pay-logo/mastercard.png" alt="" class="footer__pay-logo">
+          <img src="img/footer/pay-logo/visa.png" alt="" class="footer__pay-logo">
+          <img src="img/footer/pay-logo/paypal.png" alt="" class="footer__pay-logo">
+          <img src="img/footer/pay-logo/yandex.png" alt="" class="footer__pay-logo">
+        </div>
+        <!-- /.footer__pay-info -->
+        <div class="footer__contacts">
+          <a href="" class="footer__phone">+380999999999</a>
+          <a href="" class="footer__mail">google@mail.com</a>
+          <div class="footer-social">
+            <a href="" class="footer-social__link">
+              <img class="footer-social__image" src="img/footer/facebook.svg" alt="">
 
+            </a>
+            <a href="" class="footer-social__link">
+              <img class="footer-social__image" src="img/footer/vk.svg" alt="">
+
+
+            </a>
+            <a href="" class="footer-social__link">
+              <img class="footer-social__image" src="img/footer/instagram.svg" alt="">
+
+            </a>
+          </div>
+
+        </div>
+        <!-- /.footer__contacts -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
 
 
 
   <!-- Подключение виджета Spikmi -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=4411"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script>
+    $(window).load(function () {
+      $(".before-after").twentytwenty({
+        before_label: 'Без скинали', // Set a custom before label
+        after_label: 'Со скинали', // Set a custom after label
+      });
+    });
+  </script>
 </body>
 
 </html>

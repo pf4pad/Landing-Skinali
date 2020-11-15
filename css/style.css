@@ -60,7 +60,7 @@ body {
 }
 
 .button-o {
-  border: 2px solid #507fe1;
+  border: 2px solid #806d67;
   padding: 17px 22px;
   font-size: 12px;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ body {
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
-  background-color: #507fe1;
+  background-color: #806d67;
   color: #ffffff;
   text-decoration: none;
   font-family: 'Open Sans Bold', sans-serif;
@@ -85,15 +85,15 @@ body {
 
 .button-fitting {
   background-color: #ffffff;
-  color: #507fe1;
+  color: #806d67;
 }
 
 .button-add {
-  background-color: #7c9fe8;
+  background-color: #998781;
 }
 
 .button-like {
-  background-color: #507fe1;
+  background-color: #806d67;
   height: 30px;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .checkbox:checked + label:before {
-  background-color: #507fe1;
+  background-color: #806d67;
 }
 
 .checkbox-label {
@@ -207,7 +207,7 @@ body {
   left: 0;
   width: 100%;
   padding: 16px 0;
-  background-color: #507fe1;
+  background-color: #806d67;
   transform: translateY(0%);
   opacity: 0;
 }
@@ -236,8 +236,8 @@ body {
   justify-content: center;
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(81, 11, 186, 0.1);
-  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  border-right: 1px solid rgba(128, 109, 103, 0.1);
+  border-left: 1px solid rgba(128, 109, 103, 0.1);
   height: 80px;
   width: 70px;
 }
@@ -246,7 +246,7 @@ body {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #89a9eb;
+  background-color: #806d67;
   margin: 2px 0;
 }
 
@@ -322,6 +322,9 @@ body {
   .hero__title {
     margin-top: -50px;
     margin-bottom: 40px;
+  }
+  .hero__button {
+    margin: 0 10%;
   }
 }
 
@@ -515,7 +518,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(80, 127, 225, 0.6);
+  background-color: rgba(128, 109, 103, 0.6);
 }
 
 .catalog-card__image {
@@ -559,7 +562,7 @@ body {
 }
 
 .blog__link-more {
-  color: #507fe1;
+  color: #806d67;
   font-size: 16px;
 }
 
@@ -715,7 +718,7 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .step {
     width: 33%;
   }
@@ -752,7 +755,7 @@ body {
   display: block;
   width: 70px;
   height: 70px;
-  border: 2px solid #507fe1;
+  border: 2px solid #806d67;
   border-radius: 60%;
   margin: 20px auto;
 }
@@ -844,4 +847,108 @@ body {
     max-width: 200px;
     margin: auto;
   }
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+.questions__link {
+  font-size: 24px;
+  color: #806d67;
+}
+
+.questions-block {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer__title {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copy {
+  color: #767676;
+}
+
+.footer__pay-info {
+  display: inline;
+}
+
+.footer__pay-logo {
+  margin: 15px;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-social__link {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer-social__image {
+  max-width: 35px;
+  max-height: 35px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.before-slider {
+  max-width: 640px;
+  margin: auto;
 }
