@@ -34,10 +34,12 @@
   width: 100%
   padding: 16px 0
   background-color: $primary
-  transform: translateY(0%)
-  opacity: 0    // Включать видимость JS
+  transition: 0.2s
+  transform: translateY(-200%)
+  opacity: 0  //   Включать видимость JS
   &_active
     transform: translateY(0)
+    opacity: 1
   &__nav
     display: flex
     justify-content: space-around
@@ -57,7 +59,12 @@
     border-right: 1px solid rgba($primary, 0.1)
     border-left: 1px solid rgba($primary, 0.1)
     height: 80px
-    width: 70px
+    width: 70px3
+
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
     &-line
       display: block
       width: 20px

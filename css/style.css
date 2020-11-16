@@ -208,12 +208,14 @@ body {
   width: 100%;
   padding: 16px 0;
   background-color: #806d67;
-  transform: translateY(0%);
+  transition: 0.2s;
+  transform: translateY(-200%);
   opacity: 0;
 }
 
 .menu_active {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -239,7 +241,15 @@ body {
   border-right: 1px solid rgba(128, 109, 103, 0.1);
   border-left: 1px solid rgba(128, 109, 103, 0.1);
   height: 80px;
-  width: 70px;
+  width: 70px3;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
 }
 
 .menu-button-line {
@@ -493,6 +503,12 @@ body {
   max-width: 570px;
   position: relative;
   box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.catalog-card:hover .catalog-card__buttons {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .catalog-card__buttons {
@@ -500,6 +516,9 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .catalog-card__button {
