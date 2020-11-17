@@ -7,11 +7,14 @@
       });
       $(".before-slider").slick({
         draggable: false,
-        swipeToSlide: false,
+        
+        swipe:false,
         dots: true,
         dotsClass: 'before-slider__dots',
-        prevArrow: $('.arrow-left'),
-        nextArrow: $('.arrow-right')
+        prevArrow: false,
+        nextArrow: false
+        //prevArrow: $('.arrow-left'),
+        //nextArrow: $('.arrow-right')
       });
       $('.menu-button').on('click', function () {
         $('.menu').toggleClass('menu_active');
