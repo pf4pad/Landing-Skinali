@@ -20,6 +20,10 @@
         $('.menu').toggleClass('menu_active');
       });
       $('.select').on('click', function () {
-        $('.select__dropdown').toggleClass('.select__dropdown_open');
+        $('.select__dropdown').toggleClass('select__dropdown_open');
       });
+      $('.select_option').on('click', function () {
+       var value = $(this).attr('data-value');
+       console.log(value);
+        });
     });
