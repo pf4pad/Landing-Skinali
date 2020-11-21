@@ -17,19 +17,26 @@
 @media (max-width: 1170px)
   .hero
 
-    background: $bg-second url('../img/hero/hero-bgr.jpg') no-repeat
     background-size: 70% auto
     background-position: top right
 
 @media (max-width: 991px)
   .hero
 
-    background: $bg-second url('../img/hero/hero-bgr.jpg') no-repeat
-    background-size: 50% auto
-    background-position: top right
+    background-size: 100% auto
+    background-position: top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 350px
+@media (max-width: 768px)
+  .hero
+    background-size: 100% auto
+    background-position: top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 130px
+    flex-wrap: wrap
     &__title
-      margin-top: -50px
-      margin-bottom: 40px
-
-    &__button
-      margin: 0 10%
+      margin-bottom: 20px
