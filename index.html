@@ -14,20 +14,8 @@
 </head>
 
 <body>
-
-  <div id="loader" class="loader">
-    <div class="loader__blocks">
-      <div class="loader__block"></div>
-      <div class="loader__block"></div>
-      <div class="loader__block"></div>
-      <div class="loader__block"></div>
-      <div class="loader__block"></div>
-    </div>
-    <!-- /.loader__list -->
-  </div>
-  <!-- /#loader.loader -->
   <header class="header">
-    <div class="menu menu_active">
+    <div class="menu">
       <div class="container">
         <div class="menu__nav">
           <a href="#" class="menu__link">ГЛАВНАЯ</a>
@@ -108,14 +96,10 @@
                 </label>
 
 
-                <input type="hidden" name="type" id="select-type" value="С печатью">
-                <div class="select form__select">
-                  <div class="select_checked">С печатью</div>
-                  <ul class="select__dropdown">
-                    <li class="select__option" data-value="С печатью">С печатью</li>
-                    <li class="select__option" data-value="Без печати">Без печати</li>
-                  </ul>
-                </div>
+                <select>
+                  <option value="">С печатью</option>
+                  <option value="">Без печати</option>
+                </select>
               </div>
               <div class="form__group">
                 <label for="" class="form__label">
@@ -761,7 +745,14 @@
   <script src="js/main.js">
 
   </script>
+  <script>
+    $(window).load(function () {
+      $('menu-button').on('click', function () {
+        $('.menu').toggleClass('menu_active');
+      });
+    })
 
+  </script>
 </body>
 
 </html>

@@ -534,6 +534,7 @@ input[type="checkbox"]:checked + label:before {
   width: 100%;
   padding: 16px 0;
   background-color: #938584;
+  color: #ffffff;
   transition: 0.2s;
   transform: translateY(-200%);
   opacity: 0;
@@ -610,7 +611,7 @@ input[type="checkbox"]:checked + label:before {
     display: none;
   }
   .menu {
-    opacity: 1;
+    opacity: 0;
     margin-bottom: 20px;
   }
   .menu__nav {
@@ -744,6 +745,14 @@ input[type="checkbox"]:checked + label:before {
   display: inline-block;
   margin-left: 45px;
   font-size: 14px;
+}
+
+select {
+  width: 100%;
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
@@ -1208,8 +1217,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .contacts__image {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 25px;
 }
 
